@@ -1,16 +1,19 @@
 <template>
  <div id="app">
-   <BoxesGroup />
+   <Title class="title" />
+   <BoxesGroup class="boxes-group" />
  </div>
 </template>
 
 <script>
 import BoxesGroup from './components/BoxesGroup';
+import Title from './components/Title';
 
 export default {
   name: 'app',
   components: {
     BoxesGroup,
+    Title,
   },
 };
 </script>
@@ -27,10 +30,19 @@ export default {
   background-position: bottom;
   height: 100vh;
   width: 100vw;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.boxes-group {
+  flex: 2;
+}
+
+.title {
+  flex: 0.5;
 }
 </style>

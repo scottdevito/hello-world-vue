@@ -1,8 +1,8 @@
 <template>
  <div class="boxes-group">
-   <Box big="false" small="true" />
-   <Box big="true" small="false" />
-   <Box big="false" small="true" />
+   <Box v-bind:isSmall="true" />
+   <Box v-bind:isSmall="false" />
+   <Box v-bind:isSmall="true" />
  </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   name: 'BoxesGroup',
   components: {
     Box,
+  },
+  data: () => {
+    return {
+      isSmall: '',
+    };
   },
 };
 </script>
