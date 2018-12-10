@@ -1,7 +1,7 @@
 <template>
  <div class="boxes-group">
    <Box v-bind:isSmall="true" />
-   <Box v-bind:isSmall="false" />
+   <Box v-bind:isSmall="false" imgSrc="@/assets/tessa.svg" />
    <Box v-bind:isSmall="true" />
  </div>
 </template>
